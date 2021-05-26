@@ -1,0 +1,10 @@
+:root{
+    --red: #F4949C;
+    --blue: #69BCE9;
+    --green: #A2D297;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #111;
+}

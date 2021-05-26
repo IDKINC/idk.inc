@@ -1,22 +1,16 @@
 import * as React from "react";
-import styled from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
+import SEO from "../components/seo";
 
-import Logo from "../images/IDK_INC_Logo.svg";
+import Logo from "../images/newIDKLogo--temp.png";
 
-// styles
-const pageStyles = {
-  color: "#fff",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  flexDirection: "column",
-};
 
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>IDK INC.</title>
+    <main>
+      <GlobalStyle/>
+      <SEO />
       <Content>
         <LogoWrapper>
           <LogoImg src={Logo} alt="IDK Inc. Logo" />
@@ -43,8 +37,17 @@ const LogoImg = styled.img`
 const Content = styled.div`
   width: 100%;
   max-width: 50%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 `;
+
+const GlobalStyle = createGlobalStyle`
+main{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+`

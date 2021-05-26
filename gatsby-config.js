@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: "IDK INC.",
+    titleTemplate: "%s | IDK.INC",
+    description:
+      "IDK INC. | We Build Brands",
+    url: "https://idk.inc", // No trailing slash allowed!
+    image: "/images/temp-og-image.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@idkinc",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -15,6 +21,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

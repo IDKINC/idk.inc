@@ -3,6 +3,9 @@
     --blue: #69BCE9;
     --green: #A2D297;
 }
+
+@import "normalize";
+
 body, html {
     padding: 0;
     margin: 0;
@@ -11,6 +14,11 @@ body, html {
     color: #fff; 
 } 
 
-@import "normalize";
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
 
 

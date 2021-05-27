@@ -1,5 +1,7 @@
 import * as React from "react";
-import styled, {createGlobalStyle} from "styled-components";
+import styled from "styled-components";
+import Newsletter from "../components/common/newsletter";
+import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import Logo from "../images/newIDKLogo--temp.png";
@@ -9,13 +11,16 @@ import Logo from "../images/newIDKLogo--temp.png";
 const IndexPage = () => {
   return (
     <main>
-      <GlobalStyle/>
       <SEO />
+      <Layout header={false}>
+
       <Content>
         <LogoWrapper>
           <LogoImg src={Logo} alt="IDK Inc. Logo" />
         </LogoWrapper>
+        <Newsletter />
       </Content>
+      </Layout>
     </main>
   );
 };
@@ -43,11 +48,3 @@ const Content = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-
-const GlobalStyle = createGlobalStyle`
-main{
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
-`

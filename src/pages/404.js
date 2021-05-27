@@ -1,54 +1,74 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import { Link } from "gatsby";
+import * as React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import SEO from "../components/seo";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import Logo from "../images/newIDKLogo--temp.png";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <main>
+      <GlobalStyle />
+      <SEO />
+      <Content>
+        <LogoWrapper>
+          <LogoImg src={Logo} alt="IDK Inc. Logo" />
+          <NotFoundText>
+            <h1>Oops...</h1>
+            <h2>Either You Screwed Up Or We Did.</h2>
+            <Link to="/">&laquo; Let's Try This Again</Link>
+          </NotFoundText>
+        </LogoWrapper>
+      </Content>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
+
+const LogoWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+const LogoImg = styled.img`
+  width: 50%;
+  display: block;
+  filter: saturate(0);
+  transform: rotate(3deg);
+  opacity: 0.8;
+`;
+
+const Content = styled.div`
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const NotFoundText = styled.div`
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+  a {
+    color: #fff;
+  }
+`;
+
+const GlobalStyle = createGlobalStyle`
+main{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+`;

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { breakpoints } from "../breakpoints";
 
 const Newsletter = () => {
   return (
-    <form
+    <FormkitForm
       action="https://app.convertkit.com/forms/2313210/subscriptions"
       className="seva-form formkit-form"
       method="post"
@@ -15,7 +16,7 @@ const Newsletter = () => {
       <div className="formkit-background"></div>
       <div data-style="minimal">
         <div className="formkit-header" data-element="header">
-          <h2>Keep In Touch?</h2>
+          <FormkitHeading>we have a lot of things in the works.. subscribe to stay up to date</FormkitHeading>
         </div>
         <FormkitFields
           data-element="fields"
@@ -46,19 +47,42 @@ const Newsletter = () => {
           </FormkitSubmit>
         </FormkitFields>
         <FinePrint className="formkit-guarantee" data-element="guarantee">
-          <p>We won't send you spam. Unsubscribe at any time.</p>
+          <p>we won't send you spam. unsubscribe at any time.</p>
         </FinePrint>
       </div>
-    </form>
+    </FormkitForm>
   );
 };
 
 export default Newsletter;
 
+const FormkitForm = styled.form`
+  margin-top: auto;
+  width: 90%;
+
+
+  @media ${breakpoints.laptop} {
+    width: 70%;
+  }
+
+`;
+
 const FormkitFields = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   justify-content: stretch;
+  margin-top: auto;
+
+`;
+
+const FormkitHeading = styled.h2`
+text-align: center;
+margin: 1rem auto;
+
+
+@media ${breakpoints.laptop} {
+  max-width: 100%;
+  }
 `;
 
 const FormkitInput = styled.input`
@@ -79,4 +103,5 @@ border: none;
 
 const FinePrint = styled.div`
   font-size: 0.8em;
+  text-align: center;
 `;

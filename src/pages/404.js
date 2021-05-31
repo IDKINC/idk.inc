@@ -3,7 +3,7 @@ import * as React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import SEO from "../components/seo";
 
-import Logo from "../images/newIDKLogo--temp.png";
+import Logo from "../images/newIDKLogo--temp--crop.png";
 
 // markup
 const NotFoundPage = () => {

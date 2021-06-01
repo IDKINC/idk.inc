@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: `/idk.inc`,
   siteMetadata: {
     title: "IDK INC.",
     titleTemplate: "%s | IDK.INC",

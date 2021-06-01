@@ -32,6 +32,26 @@ const StyledFooter = styled.footer`
   color: #fff;
   align-self: flex-end;
   padding: 1rem;
+  margin-top: 3rem;
+
+  font-size: 0.8rem;
+  @media ${breakpoints.mobileL} {
+
+}
+@media ${breakpoints.tablet} {
+
+}
+@media ${breakpoints.laptop} {
+  font-size: 1rem;
+
+}
+@media ${breakpoints.laptopL} {
+  
+}
+@media ${breakpoints.desktop} {
+
+}
+
 
   a {
     color: #fff;

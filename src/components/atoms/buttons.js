@@ -30,5 +30,6 @@ const StyledButtons = styled.div`
 
   @media ${breakpoints.laptop} {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
   }
 `;

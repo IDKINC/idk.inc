@@ -16,12 +16,12 @@ const Investors = () => {
           <h1>investors</h1>
           <h2>want to help us grow?</h2>
           <Buttons>
-            <Button
+            {/* <Button
               white
               icon="download"
-              to="/deck.pdf"
+              to="/static/deck.pdf"
               label="download our deck"
-            />
+            /> */}
             <Button
               icon="dollar-sign"
               href="mailto:moneyplease@idk.inc"

@@ -58,29 +58,51 @@ export default Newsletter;
 
 const FormkitForm = styled.form`
   margin-top: auto;
-  width: 90%;
+  width: 95;
 
 
   @media ${breakpoints.laptop} {
-    width: 70%;
+    width: 100%;
   }
 
 `;
 
 const FormkitFields = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
   justify-content: stretch;
-  margin-top: auto;
+  margin: auto auto;
+  width: 95%;
+
+  @media ${breakpoints.mobileL} {
+  grid-template-columns: 1fr auto;
+
+  width: 85%;
+}
+
+@media ${breakpoints.tablet} {
+  width: 80%;
+}
+@media ${breakpoints.laptop} {
+width: 70%;
+  }
 
 `;
 
 const FormkitHeading = styled.h2`
 text-align: center;
 margin: 1rem auto;
+font-size: 0.8rem;
 
+@media ${breakpoints.mobileL} {
+  font-size: 1rem;
+}
 
+@media ${breakpoints.tablet} {
+  font-size: 1.25rem;
+}
 @media ${breakpoints.laptop} {
+font-size: 1.2rem;
   max-width: 100%;
   }
 `;
@@ -99,8 +121,15 @@ const FormkitSubmit = styled.button`
 display: block;
 background: #fff;
 border: none;
-border-radius: 0 var(--border-radius) var(--border-radius) 0;
+border-radius: 0  0 var(--border-radius) var(--border-radius) ;
 cursor: pointer;
+
+@media ${breakpoints.mobileL} {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+
+}
+
+
 `;
 
 const FinePrint = styled.div`

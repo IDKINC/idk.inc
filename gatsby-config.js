@@ -50,23 +50,23 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `portfolio`,
-        path: `${__dirname}/content/portfolio`,
-      },
-      __key: "portfolio",
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `portfolio`,
+    //     path: `${__dirname}/content/portfolio`,
+    //   },
+    //   __key: "portfolio",
 
-    },    
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `team`,
-        path: `${__dirname}/content/team`,
-      },
-      __key: "team",
+    // },    
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `team`,
+    //     path: `${__dirname}/content/team`,
+    //   },
+    //   __key: "team",
 
-    },
+    // },
   ],
 };

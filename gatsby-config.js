@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s | IDK.INC",
     description:
       "IDK INC. | We Build Brands",
-    siteUrl: "https://idk.inc", // No trailing slash allowed!
+    siteUrl: "https://idkinc.github.io/idk.inc", // No trailing slash allowed!
     image: "/images/temp-og-image.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@idkinc",
   },

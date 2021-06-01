@@ -25,11 +25,12 @@ const StyledHeader = styled.header`
   width: 100%;
   height: ${smallHeaderHeight};
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
 
   @media ${breakpoints.tablet}{
+  grid-template-columns: 1fr 1fr 1fr;
     height: ${headerHeight};
   }
 `;
@@ -47,5 +48,6 @@ const LogoImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: 0% 50%;
   display: block;
 `;

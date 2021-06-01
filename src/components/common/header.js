@@ -17,7 +17,7 @@ const Header = () => {
 export default Header;
 
 const headerHeight = "15vh";
-const smallHeaderHeight = "10vh";
+const smallHeaderHeight = "15vh";
 
 const StyledHeader = styled.header`
   color: #fff;
@@ -36,11 +36,10 @@ const StyledHeader = styled.header`
 
 const LogoWrapper = styled(Link)`
   height: ${smallHeaderHeight};
-  padding: 0 1rem;
+  padding: 1rem;
   width: auto;
   display: block;
   @media ${breakpoints.tablet}{
-  padding:  1rem 1rem;
     height: ${headerHeight};
   }
 `;

@@ -13,19 +13,19 @@ const Investors = () => {
     <Layout>
         <SEO title="Help Us Build The Future Of DTC" />
         <Content>
-          <h1>Investors</h1>
-          <h2>Want to help us grow?</h2>
+          <h1>investors</h1>
+          <h2>want to help us grow?</h2>
           <Buttons>
             <Button
               white
               icon="download"
               to="/deck.pdf"
-              label="Download Our Deck"
+              label="download our deck"
             />
             <Button
               icon="dollar-sign"
               href="mailto:moneyplease@idk.inc"
-              label="Email moneyplease@idk.inc"
+              label="email moneyplease@idk.inc"
             />
           </Buttons>
         </Content>

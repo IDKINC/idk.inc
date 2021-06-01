@@ -16,7 +16,7 @@ const Newsletter = () => {
       <div className="formkit-background"></div>
       <div data-style="minimal">
         <div className="formkit-header" data-element="header">
-          <FormkitHeading>we have a lot of things in the works.. subscribe to stay up to date</FormkitHeading>
+          <FormkitHeading>we have a lot of things in the works.. </FormkitHeading><FormkitHeading>subscribe to stay up to date</FormkitHeading>
         </div>
         <FormkitFields
           data-element="fields"
@@ -28,7 +28,7 @@ const Newsletter = () => {
               className="formkit-input"
               name="email_address"
               aria-label="Email Address"
-              placeholder="Email Address"
+              placeholder="email address"
               required=""
               type="email"
             />
@@ -43,7 +43,7 @@ const Newsletter = () => {
               <div></div>
               <div></div>
             </div>
-            <span className="">Subscribe</span>
+            <span className="">subscribe</span>
           </FormkitSubmit>
         </FormkitFields>
         <FinePrint className="formkit-guarantee" data-element="guarantee">
@@ -99,6 +99,8 @@ const FormkitSubmit = styled.button`
 display: block;
 background: #fff;
 border: none;
+border-radius: 0 var(--border-radius) var(--border-radius) 0;
+cursor: pointer;
 `;
 
 const FinePrint = styled.div`

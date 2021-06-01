@@ -9,6 +9,18 @@ module.exports = {
     twitterUsername: "@idkinc",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `IDK.INC`,
+        short_name: `idk.inc`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
+        display: `minimal-ui`,
+        icon: `static/newIDKLogo--temp.png`, // This path is relative to the root of the site.
+      }
+    },
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-google-analytics",

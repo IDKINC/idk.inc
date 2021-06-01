@@ -13,14 +13,14 @@ const SignupSuccess = () => {
       <SEO />
 
       <Content>
-        <h1>Thanks For Signing Up!</h1>
-        <h2>Click the link we just sent you to verify your email.</h2>
+        <h1>thanks for signing up!</h1>
+        <h2>click the link we just sent you to verify your email.</h2>
         <Circle>AND</Circle>
         <Button
           size="large"
           icon={["fab", "twitter"]}
           href="https://twitter.com/idkinc"
-          label="Follow Us On Twitter"
+          label="follow us on twitter"
         />
       </Content>
     </Layout>

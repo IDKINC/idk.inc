@@ -11,9 +11,6 @@ const Footer = () => {
       <FooterContent>
         <li>&copy; 2020-2021 idk inc.</li>
         <li>
-          <Link to="/investors">investors</Link>
-        </li>
-        <li>
           <Button
             href="https://twitter.com/idkinc"
             white

@@ -17,10 +17,12 @@ const SignupSuccess = () => {
         <h2>click the link we just sent you to verify your email.</h2>
         <Circle>AND</Circle>
         <Button
+        blue
           size="large"
           icon={["fab", "twitter"]}
           href="https://twitter.com/idkinc"
           label="follow us on twitter"
+
         />
       </Content>
     </Layout>

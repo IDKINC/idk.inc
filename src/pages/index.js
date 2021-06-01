@@ -6,7 +6,7 @@ import Newsletter from "../components/common/newsletter";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import Logo from "../images/newIDKLogo--temp--crop.png";
+import Logo from "../images/IDK-Inc-Icon.svg";
 
 
 // markup

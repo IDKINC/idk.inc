@@ -1,11 +1,11 @@
 :root{
-    --red: #F4949C;
-    --dark-red: #{darken(#F4949C,10)};
-    --blue: #69BCE9;
-    --dark-blue: #{darken(#69BCE9,10)};
+    --red: #F95091;
+    --dark-red: #{darken(#F95091,10)};
+    --blue: #08A3F9;
+    --dark-blue: #{darken(#08A3F9,10)};
 
-    --green: #A2D297;
-    --dark-green: #{darken(#A2D297,10)};
+    --green: #4CD618;
+    --dark-green: #{darken(#4CD618,10)};
     --text-color: #fff;
     --border-radius: 10px;
 }
@@ -17,7 +17,7 @@
 body, html {
     padding: 0;
     margin: 0;
-    background: #000;
+    background: #1e1e1e;
     font-family: "Montserrat";  
     color: #fff; 
     // background: url('https://storage.3.basecamp.com/4489519/blobs/cd1757b2-5f4c-11eb-a56c-96c1736b4981/download/Pitch%20Deck%20BG.jpg') center center / cover;

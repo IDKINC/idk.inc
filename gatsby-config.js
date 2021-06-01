@@ -19,7 +19,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `static/newIDKLogo--temp.png`, // This path is relative to the root of the site.
+        icon: `src/images/newNewIdkLogo--square.png`, // This path is relative to the root of the site.
       }
     },
     "gatsby-plugin-styled-components",
@@ -34,7 +34,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
-    `gatsby-plugin-sass`,
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {

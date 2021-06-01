@@ -22,11 +22,19 @@ const Button = ({
   href,
   to,
   white = false,
+  blue = false,
+  red = false,
+  green = false,
   size = "medium",
   ...others
 }) => {
   const computedClass =
-    "button button--" + size + (white ? " button--white" : "");
+    "button button--" +
+    size +
+    (white ? " button--white" : "") +
+    (blue ? " button--blue" : "") +
+    (red ? " button--red" : "") +
+    (green ? " button--green" : "");
 
   if (href) {
     return (
@@ -138,11 +146,36 @@ const StyledLink = styled(Link)`
 
     &:hover {
       background: rgba(255, 255, 255, 0.3);
-      text-shadow: 0 1px 1px #000;
+    }
+  }
 
-      svg {
-        filter: drop-shadow(0 1px 1px #000);
-      }
+  &.button--blue {
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: #fff;
+
+    &:hover {
+      background: var(--dark-blue);
+    }
+  }
+
+  &.button--red {
+    border: 1px solid var(--red);
+    background: var(--red);
+    color: #fff;
+
+    &:hover {
+      background: var(--dark-red);
+    }
+  }
+
+  &.button--green {
+    border: 1px solid var(--green);
+    background: var(--green);
+    color: #fff;
+
+    &:hover {
+      background: var(--dark-green);
     }
   }
 

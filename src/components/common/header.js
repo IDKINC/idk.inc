@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import * as React from "react";
 import styled from "styled-components";
-import Logo from "../../images/newIDKLogo--temp--crop.png";
+import Logo from "../../images/IDK-Inc-Icon.svg";
 import { breakpoints } from "../breakpoints";
 
 const Header = () => {
@@ -9,15 +9,15 @@ const Header = () => {
     <StyledHeader>
       <LogoWrapper to="/">
         <LogoImg src={Logo} alt="IDK Inc. Logo" />
-      </LogoWrapper>{" "}
+      </LogoWrapper>
     </StyledHeader>
   );
 };
 
 export default Header;
 
-const headerHeight = "20vh";
-const smallHeaderHeight = "15vh";
+const headerHeight = "15vh";
+const smallHeaderHeight = "10vh";
 
 const StyledHeader = styled.header`
   color: #fff;
@@ -36,9 +36,11 @@ const StyledHeader = styled.header`
 
 const LogoWrapper = styled(Link)`
   height: ${smallHeaderHeight};
+  padding: 0 1rem;
   width: auto;
   display: block;
   @media ${breakpoints.tablet}{
+  padding:  1rem 1rem;
     height: ${headerHeight};
   }
 `;

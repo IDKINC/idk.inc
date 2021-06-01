@@ -115,14 +115,24 @@ const FormkitInput = styled.input`
   color: #fff;
   border-bottom: 2px solid #fff;
   padding: 0.5rem;
+
+  &:focus{
+    background: rgba(255,255,255,0.2);
+  }
 `;
 
 const FormkitSubmit = styled.button`
 display: block;
-background: #fff;
 border: none;
 border-radius: 0  0 var(--border-radius) var(--border-radius) ;
 cursor: pointer;
+background: var(--red);
+border-bottom: 2px solid var(--red);
+color: #fff;
+
+&:hover{
+  background: var(--dark-red);
+}
 
 @media ${breakpoints.mobileL} {
   border-radius: 0 var(--border-radius) var(--border-radius) 0;

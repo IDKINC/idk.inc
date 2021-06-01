@@ -19,7 +19,7 @@ const IndexPage = () => {
         <LogoWrapper>
           <LogoImg src={Logo} alt="IDK Inc. Logo" />
         </LogoWrapper>
-        <Button extraStyle={{'white-space': "normal"}} size="large" label="interested in giving us money?" icon="dollar-sign" to="/investors"/>
+        <Button extraStyle={{'white-space': "normal"}} size="large" label="interested in giving us money?" to="/investors"/>
         <Newsletter />
       </Content>
       </Layout>

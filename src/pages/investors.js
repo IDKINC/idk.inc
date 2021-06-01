@@ -23,7 +23,6 @@ const Investors = () => {
               label="download our deck"
             /> */}
             <Button
-              icon="dollar-sign"
               href="mailto:moneyplease@idk.inc"
               label="email moneyplease@idk.inc"
             />

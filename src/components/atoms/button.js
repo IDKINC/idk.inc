@@ -34,7 +34,8 @@ const Button = ({
     (white ? " button--white" : "") +
     (blue ? " button--blue" : "") +
     (red ? " button--red" : "") +
-    (green ? " button--green" : "");
+    (green ? " button--green" : "") +
+    (label ? " button--label" : " button--no-label");
 
   if (href) {
     return (
@@ -48,9 +49,7 @@ const Button = ({
       >
         {icon ? (
           <FontAwesomeIcon icon={icon} />
-        ) : (
-          <FontAwesomeIcon icon="external-link-alt" />
-        )}
+        ) : null}
         {label ? (
           <span
             className="label"
@@ -110,12 +109,14 @@ const StyledLink = styled(Link)`
   background: var(--green);
   white-space: nowrap;
   border: 1px solid var(--green);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
   font-weight: 900;
   transition: 500ms;
   gap: 0.5em;
+  grid-gap: 0.5em;
 
   svg {
     width: 1em;
@@ -198,6 +199,12 @@ const StyledLink = styled(Link)`
       font-size: 1.5rem;
       padding: 0.5rem 2rem;
     }
+  }
+
+
+  &.button--no-label{
+    grid-gap: 0;
+    gap: 0;
   }
 `;
 

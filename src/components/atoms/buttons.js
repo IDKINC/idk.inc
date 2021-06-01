@@ -27,6 +27,7 @@ const StyledButtons = styled.div`
     margin: 1rem auto;
   width: 100%;
   gap: 1rem;
+  grid-gap: 1rem;
 
   @media ${breakpoints.laptop} {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));

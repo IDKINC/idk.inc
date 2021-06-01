@@ -53,7 +53,7 @@ jobs:
 
 
 
-      - run: yarn build --log-pages
+      - run: yarn build --log-pages --prefix-paths
         name: Build
         env:
           # incremental builds

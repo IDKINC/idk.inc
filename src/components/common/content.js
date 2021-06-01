@@ -8,7 +8,8 @@ const Content = styled.div`
   width: 100%;
   max-width: 95%;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   flex-direction: column;

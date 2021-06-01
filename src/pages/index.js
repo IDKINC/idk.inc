@@ -15,7 +15,7 @@ const IndexPage = () => {
     <Layout header={false}>
         <SEO />
 
-      <Content style={{'gap': "4rem"}}>
+      <Content style={{'gridGap': "4rem", 'gap': "4rem"}}>
         <LogoWrapper>
           <LogoImg src={Logo} alt="IDK Inc. Logo" />
         </LogoWrapper>

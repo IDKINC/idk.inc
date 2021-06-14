@@ -19,7 +19,7 @@ module.exports = {
         theme_color: `#1E1E1E`,
         display: `minimal-ui`,
         icon: `src/images/newNewIdkLogo--square.png`, // This path is relative to the root of the site.
-      }
+      } 
     },
     "gatsby-plugin-styled-components",
     {

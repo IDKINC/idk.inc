@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "IDK INC.",
-    titleTemplate: "%s | IDK.INC",
+    titleTemplate: "%s | IDK INC.",
     description:
       "IDK INC. | We Build Brands",
-    siteUrl: "https://idkinc.github.io/idk.inc", // No trailing slash allowed!
+    siteUrl: "https://idk.inc", // No trailing slash allowed!
     image: "/images/temp-og-image.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@idkinc",
   },
@@ -15,8 +15,8 @@ module.exports = {
         name: `IDK.INC`,
         short_name: `idk.inc`,
         start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#000000`,
+        background_color: `#1E1E1E`,
+        theme_color: `#1E1E1E`,
         display: `minimal-ui`,
         icon: `src/images/newNewIdkLogo--square.png`, // This path is relative to the root of the site.
       }
